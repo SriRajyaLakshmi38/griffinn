@@ -1,0 +1,46 @@
+:root {
+  margin: 0;
+  padding: 0;
+
+  --primaryColor: #c4e0e5; /*rgb(58, 71, 80)*/
+  --secondaryColor: #4ca1af; /*rgb(211, 214, 219)*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  offset: 0;
+  min-height: 100dvh;
+}
+main {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mainHeading {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 5vw);
+  color: black;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.mainContainer {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    margin-bottom: 8rem;
+  }
+}
